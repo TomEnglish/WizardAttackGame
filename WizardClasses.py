@@ -77,7 +77,6 @@ class Mage(Character):
             # Cast Spell
             damage = self.attack_power * 1.5
             if self.focus_magic_active:
-                damage *= 1.25  # 25% damage boost
                 print(f"{self.name} channels focused magic!")
                 self.focus_magic_active = False # Consume the focus
             
@@ -122,7 +121,7 @@ class Archer(Character):
         elif action == '2':
             #ability: Evade -> avoid next attack from opponent
             self.health = min(self.health + 15, self.max_health)
-            print(f"{self.name} deployes a divine sheild against {opponent.name}!")
+            print(f"{self.name} evades the attack from the {opponent.name}!")
         else:
             print("Invalid choice. Performing a standard attack.")
             self.attack(opponent) # Fallback
