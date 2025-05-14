@@ -110,7 +110,7 @@ class Archer(Character):
         print("2.Evade")
         action = input("Which abiliity would you like to use? ")
         
-        if action == 1:
+        if action == '1':
             #ability: Quick Shot -> significant damage
             damage = self.attack_power * 1.5
             opponent.health -= damage
@@ -119,7 +119,7 @@ class Archer(Character):
                 print(f"{opponent.name} has been defeated!")
             else:
                 print(f"{opponent.name} has {opponent.health} health remaining!")
-        elif action == 2:
+        elif action == '2':
             #ability: Evade -> avoid next attack from opponent
             self.health = min(self.health + 15, self.max_health)
             print(f"{self.name} deployes a divine sheild against {opponent.name}!")
@@ -141,7 +141,7 @@ class Paladin(Character):
         print("2.Divine Sheild")
         action = input("Which abiliity would you like to use? ")
         
-        if action == 1:
+        if action == '1':
             #ability: Holy Strike -> significant damage
             damage = self.attack_power * 1.75
             opponent.health -= damage
@@ -150,7 +150,7 @@ class Paladin(Character):
                 print(f"{opponent.name} has been defeated!")
             else:
                 print(f"\n{opponent.name} has {opponent.health} health remaining!")
-        elif action == 2:
+        elif action == '2':
             #ability: StealDivine Sheild -> reduced next/current attack damage
             self.health = min(self.health + 10,self.max_health) #assume a reduciton of 10 points Wizzard damage
             print(f"{self.name} deployes a divine sheild against {opponent.name}!")
@@ -169,7 +169,7 @@ class Rogue(Character): # Corrected typo: Rougue -> Rogue
         print("2.Steal")
         action = input("Which abiliity would you like to use? ")
 
-        if action == 1:
+        if action == '1':
             #ability: Backstab -> significant damage
             damage = self.attack_power * 2
             opponent.health -= damage
@@ -178,7 +178,7 @@ class Rogue(Character): # Corrected typo: Rougue -> Rogue
                 print(f"{opponent.name} has been defeated!")
             else:
                 print(f"{opponent.name} has {opponent.health} health remaining!")
-        elif action == 2:
+        elif action == '2':
             #ability: Steal -> take gold
             amounttosteal = 200
             self.gold += amounttosteal

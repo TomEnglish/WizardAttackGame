@@ -25,18 +25,18 @@
 # 🔧 STARTER CODE
 # Start Code is attached at the bottom of this document 
 # so make sure to scroll down to get it before you start! 
-#  Extend it to complete the project.
+# Extend it to complete the project.
 
 
 # 📋 PROJECT REQUIREMENTS
 # Create Your Own Character Classes:
-#   Add two new character classes in addition to Warrior and Mage. Examples include:
+# Add two new character classes in addition to Warrior and Mage. Examples include:
 #       x Archer: A ranged attacker with abilities to shoot arrows and evade attacks.
 #       x Paladin: A defensive hero who can heal and shield against attacks.
 # Implement Special Abilities:
-#   Each character must have two unique abilities, such as:
-#       Archer: "Quick Shot" (double arrow attack) and "Evade" (evades the next attack ).
-#       Paladin: "Holy Strike" (bonus damage) and "Divine Shield" (blocks the next attack).
+# Each character must have two unique abilities, such as:
+#       x Archer: "Quick Shot" (double arrow attack) and "Evade" (evades the next attack ).
+#       x Paladin: "Holy Strike" (bonus damage) and "Divine Shield" (blocks the next attack).
 # Add a Healing Mechanic:
 #       x Implement a heal() method that restores health but does not exceed the maximum.
 # Randomize Attack Damage:
@@ -56,5 +56,5 @@
 # Display victory or defeat messages at the end.
 
 # 🚀 BONUS TASKS (Optional):
-# Create additional character classes with more complex mechanics.
+#   x Create additional character classes with more complex mechanics.
 # Add random elements to the wizard’s attacks or advanced abilities (e.g., summoning minions).
